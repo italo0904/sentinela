@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+
+    background-color: #0f172a;
+
+
+    /* Garante que o body tenha pelo menos a altura da tela */
+    min-height: 100vh;
+
+
+    display: flex;
+
+
+    justify-content: center;
+
+
+    align-items: center;
+}
+
+
+.painel {
+
+
+    width: 95vw;
+
+
+    height: 90vh;
+
+
+    display: flex;
+
+
+    gap: 20px;
+}
+
+
+.lado-esquerdo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+.lado-direito {
+
+
+    /* Define que o lado direito ocupa 70% */
+    width: 70%;
+
+
+    /* Ativa o Flexbox */
+    display: flex;
+
+
+    /* Coloca os elementos um abaixo do outro */
+    flex-direction: column;
+
+
+    /* Cria espaço entre os cartões */
+    gap: 20px;
+}
+
+
+
+
+.card {
+
+
+    background-color: white;
+
+
+    border-radius: 20px;
+
+
+    padding: 30px;
+
+
+    display: flex;
+
+
+    /* Organiza os elementos verticalmente */
+    flex-direction: column;
+
+
+    /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+
+
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+
+
+    /* Centraliza os textos */
+    text-align: center;
+
+
+    /* Cria uma sombra ao redor do cartão */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+.guiche {
+
+
+    /* Define que o cartão ocupa 40% da altura */
+    height: 40%;
+}
+
+
+.guiche h2 {
+    font-size: 2.5vw;
+}
+
+
+.numero{
+    font-size: 8vw;
+    font-weight: bold;
+    margin-top:20px ;
+    animation: piscar 3s ease-in-out;
+}
+@keyframes piscar{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.historico{
+    height: 60%;
+    justify-content: flex-start;
+}
+
+
+.historico h2{
+    font-size:2vw;
+    margin-bottom: 25px;
+}    
+
+
+.chamada{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 2px solid #ddd;
+    font-size: 1.5vw;
+}
+
+
+.chamada-atual{
+    height: 75%;
+}
+
+
+.chamada strong{
+    font-weight: bold;
+}
+
+
+.chamada-atual h2{
+    font-size: 3vw;
+    margin-bottom: 30px;
+}
+
+
+.nome{
+    font-size: 6vw;
+    font-weight: bold;
+    margin-bottom: 30px;
+    animation: aparecer 3s ease-in-out;
+}
+@keyframes aparecer{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.mensagem{
+    font-size:2.5vw ;
+    font-weight: bold;
+}
+.rodape{
+    height:25% ;
+}
+
+
+.rodape p{
+    font-size: 1.5vw;
+}
+
+.botoes{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+

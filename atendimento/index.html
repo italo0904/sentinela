@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+
+<body>
+    <!-- cabeçalho "header" -->
+    <header class="topo">
+        <h1>sistema hospital</h1>
+        <p>módulo: atemdimento médico</p>
+
+    </header>
+    <div class="container mt-4">
+         <!-- dados do paciente -->
+         <div class="card-box">
+            <h3>Prontuário do Paciente</h3>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Nome:</strong>Italo gostoso</p>
+                    <p><strong>CPF:</strong>091.991.234-09</p>
+                    <p><strong>Data de nascimento:</strong>09/04/2000</p>
+                </div>
+
+                <div class="col-md-6"> 
+                    <p><strong>Sexo:</strong> Masculino</p>
+                    <p><strong>Telefone:</strong>(61)99299-3081</p>
+                    <p><strong>Convênio:</strong> SUS</p>
+                </div>
+            </div>
+         </div>
+         <div class="card-box">
+
+            <h3>Atendimento</h3>
+
+          
+            <div class="campo">
+                <label>CRM do Médico</label>
+                <input type="text" placeholder="Digite CRM">
+            </div>
+            <div class="campo">
+                <label>Covênio</label>
+                <select>
+                    <option>Selecione</option>
+                    <option>Cirurgião oftalmológico</option>
+                    <option>Especialista em catarata</option>
+                    <option>Especialista em retina e vítreo</option>
+                    <option>Especialista em córnea</option>
+                    <option>Especialista em glaucoma</option>
+                    <option>Oftalmopediatra</option>
+                    <option>Especialista em estrabismo</option>
+                    <option>Neuro-oftalmologista</option>
+                    <option>Especialista em cirurgia refrativa</option>
+                    <option>Oculoplástico</option>
+                    <option>Especialista em lentes de contato</option>
+                    <option>Especialista em uveíte</option>
+                    <option>Especialista em baixa visão</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label>UF do CRM</label>
+                <input type="text">
+            </div>
+            <div class="campo">
+                <label>Exame Físico</label>
+                <textarea placeholder="Resultado do exame físico"></textarea>
+            </div>
+
+            <div class="campo">
+                <label>Diagnóstico (CID-10)</label>
+                <input type="text" placeholder="Ex= A00">
+            </div>
+            <div class="campo">
+                <label>Solicitação de Exame</label>
+                <textarea placeholder="Solicitar exames ou procedimentos"></textarea>
+            </div>
+            <div class="botoes">
+               
+                <button class="btn btn-primary w-100">
+                        <a href="../prescricao/index.html">Salvar atendimento </a>
+                       </button>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
